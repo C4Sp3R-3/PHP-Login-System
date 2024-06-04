@@ -6,7 +6,7 @@ if (isset($_SESSION['verified']))
     header("location: welcome.php");
 
     else{
-
+            //recaptcha verification
             $flag = false;
             $response  = $_POST['g-recaptcha-response'] ; 
             $mysecret = "6LfZE6cpAAAAAMingD3NNTT11Zu46mtGLCTTsve6" ;
