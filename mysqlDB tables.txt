@@ -1,0 +1,25 @@
+CREATE TABLE `users` (
+  `username` varchar(20) NOT NULL,
+  `pwd` varchar(200) DEFAULT NULL,
+  `email` varchar(50) NOT NULL,
+  `privilege` decimal(1,0) NOT NULL,
+  `mfa` char(1) DEFAULT '0',
+  `user_secret` varchar(50) DEFAULT NULL,
+  `avatar` varchar(200) DEFAULT 'default.png',
+  PRIMARY KEY (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `pwdtokens` (
+  `username` varchar(20) NOT NULL,
+  `token` char(32) NOT NULL,
+  KEY `username` (`username`),
+  CONSTRAINT `pwdtokens_ibfk_1` FOREIGN KEY (`username`) REFERENCES `users` (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
+CREATE TABLE `posts` (
+  `author` varchar(50) NOT NULL,
+  `title` varchar(200) NOT NULL,
+  `description` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
