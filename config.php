@@ -31,6 +31,6 @@ $mail->Port = 587;
 //google auth api config
 define("clientID","");
 define("clientSecret","");
-define("redirectURL","http://localhost/authentication/Glogin.php");
+define("redirectURL","http://localhost/Glogin.php");
 
 ?>
