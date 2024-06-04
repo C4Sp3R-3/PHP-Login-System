@@ -117,7 +117,7 @@
                     $mail->setFrom($mail->Username, 'account recovery');
                     $mail->addAddress($email , $username);
                     $mail->Subject = 'password reset url';
-                    $mail->Body = 'http://localhost/authentication/resetpwd.php?token='.$token;
+                    $mail->Body = 'http://localhost/resetpwd.php?token='.$token;
                     $flag = $mail->send();
 
                     if($flag){ $_SESSION["pwdrstreq"] = 'sent';header('location: resetpwdform.php');exit;}
