@@ -1,0 +1,257 @@
+body{
+    background-color: #f7f7f7;
+    margin: 0px;
+    padding: 0%;
+    height: 100%;
+}
+input::placeholder{
+    color: #000000;
+}
+.maindiv{
+    padding-bottom: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+input[type=text]{
+    margin-top: 15%;
+    margin-left: 3%;
+    width: 60%;
+    padding: 6px 12px;
+    font-size: 20px;
+    font-family: fantasy;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 4px solid #ff0000;
+    appearance: none;
+    border-radius: 4px;
+    transition: border-color .5s ease-in-out,box-shadow .5s ease-in-out;
+    opacity: 60%;
+    filter: brightness(100%);
+    
+    
+}
+input[type=text]:focus{
+    margin-top: 15%;
+    margin-left: 3%;
+    width: 60%;
+    padding: 6px 12px;
+    font-size: 26px;
+    font-family: fantasy;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 6px none #ffffff;
+    appearance: none;
+    border-radius: 5px;
+    box-shadow:rgba(255, 0, 0, 0.281) 5px 7px 2px ;
+    transition: border-color .7s ease-in-out,box-shadow .5s ease-in-out;
+    opacity: 60%;
+    filter: brightness(100%);
+}
+input[type=password]{
+    
+    padding: 6px 12px;
+    position: relative;
+    margin-left: 3%;
+    left: 0px;
+    width: 60%;
+    font-size: 20px;
+    font-family: fantasy;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 4px solid #ff0000;
+    appearance: none;
+    border-radius: 4px;
+    transition: border-color .5s ease-in-out,box-shadow .5s ease-in-out;
+    opacity: 60%;
+    filter: brightness(100%);
+    
+    
+}
+input[type=password]:focus{
+    margin-left: 3%;
+    width: 60%;
+    padding: 6px 12px;
+    position: relative;
+    font-size: 26px;
+    font-family: fantasy;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 6px none #ffffff;
+    appearance: none;
+    border-radius: 5px;
+    box-shadow:rgba(255, 0, 0, 0.281) 5px 7px 2px ;
+    transition: border-color .7s ease-in-out,box-shadow .5s ease-in-out;
+    opacity: 60%;
+    filter: brightness(100%);
+}
+input[type=email]{
+    padding: 6px 12px;
+    position: relative;
+    margin-left: 3%;
+    left: 0px;
+    width: 60%;
+    font-size: 20px;
+    font-family: fantasy;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 4px solid #ff0000;
+    appearance: none;
+    border-radius: 4px;
+    transition: border-color .5s ease-in-out,box-shadow .5s ease-in-out;
+    opacity: 60%;
+    filter: brightness(100%);
+}
+input[type=email]:focus{
+    margin-left: 3%;
+    width: 60%;
+    padding: 6px 12px;
+    position: relative;
+    font-size: 26px;
+    font-family: fantasy;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 6px none #ffffff;
+    appearance: none;
+    border-radius: 5px;
+    box-shadow:rgba(255, 0, 0, 0.281) 5px 7px 2px ;
+    transition: border-color .7s ease-in-out,box-shadow .5s ease-in-out;
+    opacity: 60%;
+    filter: brightness(100%);
+}
+input[type=submit]{
+    
+    display: inline-block;
+    vertical-align: 100%;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 6px;
+    font-family: fantasy;
+    border: 2px solid #ffffff;
+    color: #fff;
+    background-color: #ff0800;
+    margin-top: 10%;
+    box-shadow:  rgba(255, 0, 0, 0.4) 6px 6px 2px ;
+    font-size: 3ex;
+    height: 45px;
+}
+input[type=submit]:hover{
+    background-color: #ffffff;
+    color: red;
+    border-color: red;
+    box-shadow:  rgba(255, 255, 255, 0.4) 6px 6px 2px ;
+    
+}
+input[type=submit]:active{
+    background-color: #ffffff;
+    color: red;
+    border-color: red;
+    box-shadow:  rgba(255, 255, 255, 0.4) 2px 2px 2px ;
+    transform: translateY(5px);
+}
+button{
+    display: inline-block;
+    vertical-align: 100%;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 6px;
+    font-family: fantasy;
+    border: 2px solid #ffffff;
+    color: #fff;
+    background-color: #ff0800;
+    margin-top: 10%;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 2px 4px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1.5px 0px;
+    font-size: 3ex;
+    height: 45px;
+}
+p{
+    font-family: fantasy;
+    color: #fff;
+}
+
+.float-container {
+    display: flex;  
+    box-sizing: border-box;
+}
+
+.float-child-left {
+    position: absolute;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    width: 35%;
+    height: 100vh;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}  
+
+.float-child-right {
+    position: absolute;
+    display: flex;
+    top: 0px;
+    right: 0px;
+    height:100vh;
+    width: 60%;
+    float: right;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.center-content{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.border{
+    border-color: rgb(116, 74, 74);
+    border-style: solid;
+    border-width: 10px;
+    padding: 10px;
+}
+
+.fullscreen100vh{
+    height: 100vh;
+}
+
+.fullscreen100percent{
+    height: 100%;
+}
+.center {
+    margin: auto;
+    display: flex;
+  }
+a{
+    text-decoration: none ;
+    font-size: 2.1ex;
+    
+}
+a:link{
+    color: red;
+}
+a:visited{
+    color: red;
+}
+a:hover{
+    text-decoration: none ;
+    color: rgb(255, 255, 255);
+    font-size: 2.5ex;
+}
